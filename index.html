@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mini Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Mini Shop</h1>
+    <nav>
+      <a href="#electronics" onclick="filterCategory('electronics')">Electronics</a>
+      <a href="#fashion" onclick="filterCategory('fashion')">Fashion</a>
+      <a href="#home" onclick="filterCategory('home')">Home & Living</a>
+    </nav>
+    <input type="text" id="searchBar" placeholder="Search products..." onkeyup="filterProducts()">
+    <div class="category-buttons">
+      <button onclick="filterCategory('all')">All</button>
+      <button onclick="filterCategory('electronics')">Electronics</button>
+      <button onclick="filterCategory('fashion')">Fashion</button>
+      <button onclick="filterCategory('home')">Home & Living</button>
+    </div>
+  </header>
+
+  <section id="electronics">
+    <h2>Electronics</h2>
+    <div class="products">
+      <div class="product" data-name="Product 1" data-category="electronics">
+        <a href="https://www.lazada.com.ph/catalog/?q=Electronics" target="_blank">
+          <img src="images/product1.png" alt="Product 1">
+        </a>
+        <p>Product 1</p>
+        <a href="https://www.lazada.com.ph/catalog/?q=Electronics" target="_blank" class="buy-button">Buy Now</a>
+      </div>
+      <div class="product" data-name="Product 2" data-category="electronics">
+        <a href="https://www.lazada.com.ph/catalog/?q=Electronics" target="_blank">
+          <img src="images/product2.png" alt="Product 2">
+        </a>
+        <p>Product 2</p>
+        <a href="https://www.lazada.com.ph/catalog/?q=Electronics" target="_blank" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="fashion">
+    <h2>Fashion</h2>
+    <div class="products">
+      <div class="product" data-name="Product 3" data-category="fashion">
+        <a href="https://www.lazada.com.ph/tag/fashion/?q=fashion&catalog_redirect_tag=true" target="_blank">
+          <img src="images/product3.png" alt="Product 3">
+        </a>
+        <p>Product 3</p>
+        <a href="https://www.lazada.com.ph/products/product3" target="_blank" class="buy-button">Buy Now</a>
+      </div>
+      <div class="product" data-name="Product 4" data-category="fashion">
+        <a href="https://www.lazada.com.ph/tag/fashion/?q=fashion&catalog_redirect_tag=true" target="_blank">
+          <img src="images/product4.png" alt="Product 4">
+        </a>
+        <p>Product 4</p>
+        <a href="https://www.lazada.com.ph/products/product4" target="_blank" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="home">
+    <h2>Home & Living</h2>
+    <div class="products">
+      <div class="product" data-name="Product 5" data-category="home">
+        <a href="https://www.lazada.com.ph/catalog/?q=Home%20%26%20Living" target="_blank">
+          <img src="images/product5.png" alt="Product 5">
+        </a>
+        <p>Product 5</p>
+        <a href="https://www.lazada.com.ph/catalog/?q=Home%20%26%20Living" target="_blank" class="buy-button">Buy
+          Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Mini Shop. All rights reserved.</p>
+    <p>Follow us on
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
